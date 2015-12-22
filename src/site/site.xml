@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <skin>
+    <groupId>org.dataconservancy.skins</groupId>
+    <artifactId>spec</artifactId>
+    <version>1</version>
+  </skin>
+  <custom>
+    <fluidoSkin>
+      <topBarEnabled>false</topBarEnabled>
+      <sideBarEnabled>false</sideBarEnabled>
+      
+      <topBarIcon>
+        <name>Data Conservancy Packaging Specifications</name>
+        <alt>Data Conservancy Packaging Specifications</alt>
+        <src>/images/dc-logo.gif</src>
+        <href>/index.html</href>
+      </topBarIcon>
+      
+    </fluidoSkin>
+  </custom>
+</project>
