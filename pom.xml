@@ -17,7 +17,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.dataconservancy</groupId>
   <artifactId>dc-packaging-spec</artifactId>
@@ -31,7 +31,7 @@
     <groupId>org.dataconservancy</groupId>
     <artifactId>project-pom</artifactId>
     <version>5</version>
-    <relativePath></relativePath>
+    <relativePath/>
   </parent>
 
   <!-- Properties  ================================================ -->
@@ -43,11 +43,11 @@
   </properties>
 
   <!-- Build ====================================================== -->
-  
+
   <build>
-    
+
     <plugins>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
@@ -59,16 +59,17 @@
           </dependency>
         </dependencies>
       </plugin>
-      
+
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
         <version>0.12</version>
         <configuration>
-          <message>Creating site for ${project.version}</message>          
+          <message>Creating site for ${project.version}</message>
         </configuration>
         <executions>
           <execution>
+            <id>gh-site</id>
             <goals>
               <goal>site</goal>
             </goals>
@@ -76,9 +77,9 @@
           </execution>
         </executions>
       </plugin>
-      
+
     </plugins>
-    
+
   </build>
 
   <profiles>
@@ -126,7 +127,7 @@
     <developerConnection>scm:git:https://github.com/DataConservancy/dc-packaging-spec.git</developerConnection>
     <url>https://github.com/DataConservancy/dc-packaging-spec</url>
   </scm>
-  
+
   <repositories>
 
     <repository>
@@ -141,7 +142,7 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-  
+
     <repository>
       <id>dc.maven.snapshots</id>
       <name>Data Conservancy Public Maven 2 Repository (snapshots)</name>
@@ -154,7 +155,7 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
-  
+
   </repositories>
-  
+
 </project>
