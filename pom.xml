@@ -25,6 +25,7 @@
   <packaging>pom</packaging>
   <name>Data Conservancy Packaging Specification</name>
   <description>The management and versioning of the Data Conservancy Packaging Specification</description>
+  <url>https://github.com/DataConservancy/dc-packaging-spec</url>
 
   <parent>
     <groupId>org.dataconservancy</groupId>
