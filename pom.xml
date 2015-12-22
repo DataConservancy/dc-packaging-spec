@@ -80,7 +80,43 @@
     </plugins>
     
   </build>
-  
+
+  <profiles>
+    
+    <profile>
+      
+      <id>disable-ghpages</id>
+      <activation>
+        <property>
+          <name>nopush</name>
+        </property>
+      </activation>
+      
+      <build>
+        
+        <plugins>
+          
+          <plugin>
+            <groupId>com.github.github</groupId>
+            <artifactId>site-maven-plugin</artifactId>
+            <version>0.12</version>
+            <executions>
+              <execution>
+                <id>gh-site</id>
+                <goals/>
+                <phase/>
+              </execution>
+            </executions>
+          </plugin>
+          
+        </plugins>
+        
+      </build>
+      
+    </profile>
+    
+  </profiles>
+
   <!-- Reporting ================================================== -->
 
   <!-- SCM  ======================================================= -->
