@@ -119,6 +119,25 @@
   </profiles>
 
   <!-- Reporting ================================================== -->
+  
+  <reporting>
+    
+    <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <!-- disable reports -->
+        <reportSets>
+          <reportSet>
+            <reports/>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      
+    </plugins>
+    
+  </reporting>
 
   <!-- SCM  ======================================================= -->
 
