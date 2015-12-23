@@ -2,6 +2,10 @@
 
 ## Version 1.0
 
+Originally Published: $decoration.custom.getChild( 'initialPublishDate' ).getValue()
+
+Last Published: $decoration.custom.getChild( 'lastPublishedDate' ).getValue()
+
 * * *
 
 &ensp;&ensp;1. [What is a Data Conservancy Package?](#1)
