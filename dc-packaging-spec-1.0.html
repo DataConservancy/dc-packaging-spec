@@ -49,6 +49,9 @@
         <div id="bodyColumn" >
                                   
             <h1>Data Conservancy Packaging Specification</h1>
+<div class="section">
+<div class="section">
+<h3><a name="Version_1.0"></a>Version 1.0</h3>
 <p>Originally Published: 12/23/2015</p>
 <p>Last Published: 12/23/2015</p>
 <hr />
@@ -73,8 +76,13 @@
 <p>A Data Conservancy Package is a format (described by this document) for encapsulating digital content (i.e., a payload) with defined semantics, and metadata used to describe technical aspects of the package as a whole. </p>
 <p><a name="a2"></a></p>
 <h1>2. Requirements and terminology</h1>
-<p><a name="a2.1"></a> The meaning of &#x201c;MUST&#x201d;, &#x201c;MUST NOT&#x201d;, &#x201c;REQUIRED&#x201d;, &#x201c;SHALL&#x201d;, &#x201c;SHALL NOT&#x201d;, &#x201c;SHOULD&#x201d;, &#x201c;SHOULD NOT&#x201d;, &#x201c;RECOMMENDED&#x201d;, &#x201c;MAY&#x201d;, and &#x201c;OPTIONAL&#x201d; are defined in <a class="externalLink" href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
-<p><a name="a2.2"></a></p>
+<p><a name="a2.1"></a></p></div></div>
+<div class="section">
+<h2><a name="a2.1_Requirements"></a>2.1 Requirements</h2>
+<p>The meaning of &#x201c;MUST&#x201d;, &#x201c;MUST NOT&#x201d;, &#x201c;REQUIRED&#x201d;, &#x201c;SHALL&#x201d;, &#x201c;SHALL NOT&#x201d;, &#x201c;SHOULD&#x201d;, &#x201c;SHOULD NOT&#x201d;, &#x201c;RECOMMENDED&#x201d;, &#x201c;MAY&#x201d;, and &#x201c;OPTIONAL&#x201d; are defined in <a class="externalLink" href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.</p>
+<p><a name="a2.2"></a></p></div>
+<div class="section">
+<h2><a name="a2.2_Terminology"></a>2.2 Terminology</h2>
 <p><i>Custodial Content</i>: The novel information contained within a package according to this specification, and described accordingly (i.e. via <i>Domain Objects</i>). Also known as the package payload.</p>
 <p><i>Domain Object</i>: A package resource, modeled using RDF, describing the payload.</p>
 <p><i>Domain Object Manifest</i>: A package resource, <a class="externalLink" href="http://www.openarchives.org/ore/1.0/datamodel#Resource_Map">modeled as an OAI-ORE Resource Map</a>, enumerating the domain objects in the package.</p>
@@ -83,20 +91,41 @@
 <p><i>Serialized Package</i>: A concrete form of a package expressed as files and directories on a file system.</p>
 <p><a name="a3"></a></p>
 <h1>3. Package components and structure</h1>
-<p><a name="a3.1"></a> Serialized packages MUST conform to the Data Conservancy BagIt profile version 1.0 as specified here.</p>
-<p><a name="a3.2"></a></p>
+<p><a name="a3.1"></a></p></div>
+<div class="section">
+<h2><a name="a3.1_Package_Serialization"></a>3.1 Package Serialization</h2>
+<p>Serialized packages MUST conform to the Data Conservancy BagIt profile version 1.0 as specified here.</p>
+<p><a name="a3.2"></a></p></div>
+<div class="section">
+<h2><a name="a3.2_Specified_RDF_Resources"></a>3.2 Specified RDF Resources</h2>
 <p><a name="a3.2.1"></a></p>
+<div class="section">
+<h3><a name="a3.2.1_Resource_Serialization"></a>3.2.1 Resource Serialization</h3>
 <p>RDF resources specified below SHOULD be serialized using the same serialization format. One of the following serialization formats are RECOMMENDED: JSON-LD, RDF/XML, or Turtle. </p>
 <p>Serialization format for specified RDF resources MUST be reflected in filename extensions. Specifically, files serialized in JSON-LD, RDF/XML, and Turtle formats must have <tt>.jsonld</tt>, <tt>.rdf</tt>, and <tt>.ttl</tt> extensions respectively.</p>
-<p><a name="a3.2.2"></a> Domain objects MUST be modeled as RDF resources, and are used to provide semantics for the package payload. </p>
+<p><a name="a3.2.2"></a></p></div>
+<div class="section">
+<h3><a name="a3.2.2_Domain_Objects"></a>3.2.2 Domain Objects</h3>
+<p>Domain objects MUST be modeled as RDF resources, and are used to provide semantics for the package payload. </p>
 <p>Serialized domain object resources MUST use a file extension that indicates their serialization format.</p>
-<p><a name="a3.2.3"></a></p>
-<p><a name="a3.2.3.1"></a> The Resource Manifest MUST be modeled as a single ORE Resource Map containing exactly one ORE Aggregation. The ORE Aggregation MUST enumerate the resources in the package payload that contain serializations of domain objects. These resources MUST be referenced using a compliant URI (<a href="#a4">see &#xa7;4</a>).</p>
+<p><a name="a3.2.3"></a></p></div>
+<div class="section">
+<h3><a name="a3.2.3_Resource_Manifest"></a>3.2.3 Resource Manifest</h3>
+<p><a name="a3.2.3.1"></a></p>
+<div class="section">
+<h4><a name="a3.2.3.1_Resource_Manifest_Model"></a>3.2.3.1 Resource Manifest Model</h4>
+<p>The Resource Manifest MUST be modeled as a single ORE Resource Map containing exactly one ORE Aggregation. The ORE Aggregation MUST enumerate the resources in the package payload that contain serializations of domain objects. These resources MUST be referenced using a compliant URI (<a href="#a4">see &#xa7;4</a>).</p>
 <p>The serialized ORE-ReM MUST use a file extension that indicates its serialization format, per <a href="#a3.2.1">&#xa7;3.2.1</a>. </p>
-<p><a name="a3.2.3.2"></a> The BagIt metadata keyword Resource-Manifest MUST be present in bag-info.txt, and it&#x2019;s value MUST be the location of the Resource Manifest serialization, referenced using a compliant URI (<a href="#a4">&#xa7;4</a>).</p>
+<p><a name="a3.2.3.2"></a></p></div>
+<div class="section">
+<h4><a name="a3.2.3.2_Resource_Manifest_Discovery"></a>3.2.3.2 Resource Manifest Discovery</h4>
+<p>The BagIt metadata keyword Resource-Manifest MUST be present in bag-info.txt, and it&#x2019;s value MUST be the location of the Resource Manifest serialization, referenced using a compliant URI (<a href="#a4">&#xa7;4</a>).</p>
 <p>This specification RECOMMENDS the use of the <tt>/META-INF/org.dataconservancy.packaging/PKG-INFO/ORE-REM/ORE-REM.[ext]</tt> bag resource for the location of the Resource Manifest, where <tt>[ext]</tt> indicates the extension of the serialization, per <a href="#a3.2.1">&#xa7;3.2.1</a>.</p>
 <p>RDF resources specified herein MUST be identified with bag URIs, and MAY be additionally identified using local identifier schemes.</p>
-<p><a name="a3.2.4"></a> It is RECOMMENDED that the package contain all ontologies necessary to interpret RDF resources in the package. The serialized ontologies MUST use a file extension that indicates their serialization format, per <a href="#a3.2.1">&#xa7;3.2.1</a>.</p>
+<p><a name="a3.2.4"></a></p></div></div>
+<div class="section">
+<h3><a name="a3.2.4_Ontologies"></a>3.2.4 Ontologies</h3>
+<p>It is RECOMMENDED that the package contain all ontologies necessary to interpret RDF resources in the package. The serialized ontologies MUST use a file extension that indicates their serialization format, per <a href="#a3.2.1">&#xa7;3.2.1</a>.</p>
 <p>This specification RECOMMENDS the use of the <tt>/META-INF/org.dataconservancy.packaging/ONT</tt> bag resource for containing ontology serializations.</p>
 <p><a name="a4"></a></p>
 <h1>4. Package URIs</h1>
@@ -114,7 +143,10 @@
   
 <li><tt>bag://</tt></li>
 </ul>
-<p><a name="a4.1"></a> This specification proposes a URI scheme for referencing bag resources, allowing resources in a specified bag to be addressed using URIs. This scheme complies with the characteristics of a package URI, and MAY be used when the serialized package conforms to the Data Conservancy BagIt Profile. The form of a bag URI is:</p>
+<p><a name="a4.1"></a></p></div></div>
+<div class="section">
+<h2><a name="a4.1_Bag_URIs"></a>4.1 Bag URIs</h2>
+<p>This specification proposes a URI scheme for referencing bag resources, allowing resources in a specified bag to be addressed using URIs. This scheme complies with the characteristics of a package URI, and MAY be used when the serialized package conforms to the Data Conservancy BagIt Profile. The form of a bag URI is:</p>
 
 <div class="source">
 <div class="source"><pre class="prettyprint">bag://&lt;bag-name&gt;/data/resource.xml
@@ -137,7 +169,7 @@
 <li>RDF serializations MAY use relative URIs, which MUST be interpreted as being relative to the bag URI of the document containing it</li>
   
 <li>Absent a specified base URI in the document, the null relative URI (&lt;&gt; in turtle) MUST be interpreted as equivalent to the the bag URI of the file containing it.</li>
-</ul>
+</ul></div>
                   </div>
           </div>
 
