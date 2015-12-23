@@ -55,7 +55,7 @@ colleagues to your changes and iterate over their feedback.
 
 ### Publishing the site
 
-When the changes have been approved, publish them to the website by
+When the changes have been approved, publish them to the [website][wiki] by
 running:
 
     mvn clean site -Dpush
