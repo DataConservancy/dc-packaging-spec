@@ -207,6 +207,6 @@ Bags conforming to this profile MUST name the single-file form of the
 bag (i.e. tar archive or zipped form) after the base directory of the bag.  
 This changes the SHOULD in BagIt §4 item #2 to a MUST.
 
-[bagit-0.97]: https://tools.ietf.org/html/draft-kunze-bagit-11
+[bagit-0.97]: http://tools.ietf.org/html/draft-kunze-bagit-11
 [bagit-profile-0.9]: http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf
 [msdn]: http://msdn.microsoft.com/en-us/library/aa365247.aspx
