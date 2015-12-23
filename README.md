@@ -38,7 +38,7 @@ to XHTML prior to publication.
 To make edits to site content, clone this repository, and edit 
 the files under `src/site/markdown`.  To preview your changes, run:
 
-    mvn clean site -Dnopush
+    mvn clean site
 
 The output will be in the `target/site` directory.
 
@@ -58,7 +58,7 @@ colleagues to your changes and iterate over their feedback.
 When the changes have been approved, publish them to the website by
 running:
 
-    mvn clean site
+    mvn clean site -Dpush
 
 The site will be rendered and published to GitHub.
 
