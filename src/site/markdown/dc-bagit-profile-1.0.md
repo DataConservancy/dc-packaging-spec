@@ -74,14 +74,14 @@ _complete and valid_ bag per the BagIt specification.
 ### 2.2.2 Filename interoperability between platforms
 
 Section 7 of the BagIt specification discusses practical concerns of Bag 
-interoperability between platforms.  While BagIt §7 is informative, this 
+interoperability between platforms.  While [BagIt §7][bagit-7] is informative, this 
 profile applies the following constraints to address platform interoperability.
 
 <a name="#2.2.2.1"/>
 #### 2.2.2.1 Illegal characters
 
 The following characters are illegal, and are not to be used in path segments 
-or file names, informed by BagIt §7.2.2:
+or file names, informed by [BagIt §7.2.2][bagit-722]:
 
 * Unicode characters in the range of 0x00 - 0x1f
 * “ (Quotation mark, 0x22)
@@ -100,7 +100,7 @@ or file names, informed by BagIt §7.2.2:
 <a name="#2.2.2.2"/>
 #### 2.2.2.2 Illegal file names
 
-The following are not to be used as file names, informed by BagIt §7.2.2, 
+The following are not to be used as file names, informed by [BagIt §7.2.2][bagit-722], 
 and [MSDN article][msdn]:
 
 * CON 
@@ -150,7 +150,7 @@ therefore bags with a non-empty fetch file will not be conformant with this prof
 <a name="#2.2.4"/>
 ### 2.2.4 Reserved metadata names and cardinality
 
-This profile adds cardinality constraints on the reserved metadata names in BagIt §2.2.2:
+This profile adds cardinality constraints on the reserved metadata names in [BagIt §2.2.2][bagit-222]:
 
     Source-Organization: minOccurs=0, maxOccurs=unlimited
     Organization-Address: minOccurs=0, maxOccurs=unlimited
@@ -182,8 +182,8 @@ whereas names with `minOccurs=1` are required.
 ## 3.1 Reserved directories and tag files
 
 Any directories or filenames reserved by this profile are considered as 
-“Other Tag Files” per BagIt §2.2.4.  Tag files defined by this profile 
-SHOULD have entries in the tag manifests as specified by BagIt §2.2.1.
+“Other Tag Files” per [BagIt §2.2.4][bagit-224].  Tag files defined by this profile 
+SHOULD have entries in the tag manifests as specified by [BagIt §2.2.1][bagit-221].
 
 This profile reserves the directory `META-INF/org.dataconservancy.packaging`, 
 its subdirectories, and any contained files, where the `META-INF` directory 
@@ -205,8 +205,17 @@ directories will be part of another specification.
 
 Bags conforming to this profile MUST name the single-file form of the 
 bag (i.e. tar archive or zipped form) after the base directory of the bag.  
-This changes the SHOULD in BagIt §4 item #2 to a MUST.
+This changes the SHOULD in [BagIt §4][bagit-4] item #2 to a MUST.
 
 [bagit-0.97]: http://tools.ietf.org/html/draft-kunze-bagit-11
+[bagit-212]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.1.2
+[bagit-221]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.1
+[bagit-222]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.2
+[bagit-223]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.3
+[bagit-224]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.4
+[bagit-3]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-3
+[bagit-4]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-4
+[bagit-7]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7
+[bagit-722]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2
 [bagit-profile-0.9]: http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf
 [msdn]: http://msdn.microsoft.com/en-us/library/aa365247.aspx
