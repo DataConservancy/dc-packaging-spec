@@ -6,8 +6,6 @@
     <version>1</version>
   </skin>
   <custom>
-    <initialPublishDate>12/23/2015</initialPublishDate>
-    <lastPublishedDate>12/23/2015</lastPublishedDate>
     <fluidoSkin>
       <topBarEnabled>false</topBarEnabled>
       <sideBarEnabled>false</sideBarEnabled>

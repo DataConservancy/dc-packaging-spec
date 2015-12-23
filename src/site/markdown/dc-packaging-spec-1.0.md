@@ -1,10 +1,10 @@
 # Data Conservancy Packaging Specification
 
-## Version 1.0
+### Version 1.0
 
-Originally Published: $decoration.custom.getChild( 'initialPublishDate' ).getValue()
+Originally Published: 12/23/2015
 
-Last Published: $decoration.custom.getChild( 'lastPublishedDate' ).getValue()
+Last Published: 12/23/2015
 
 * * *
 
