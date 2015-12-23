@@ -144,7 +144,7 @@ by ‘/’) in a manifest must not be equal to any of the following byte sequenc
 ### 2.2.3 Fetch support
 
 Bags conforming to this profile must be _valid_ (and therefore _complete_) per 
-BagIt §2.1.2.  Our profile does not support _fetch.txt_ (BagIt §2.2.3), 
+[BagIt §3][bagit-3].  Our profile does not support _fetch.txt_ ([BagIt §2.2.3][bagit-223]), 
 therefore bags with a non-empty fetch file will not be conformant with this profile.
 
 <a name="#2.2.4"/>
