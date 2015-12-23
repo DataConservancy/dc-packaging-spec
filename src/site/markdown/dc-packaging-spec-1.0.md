@@ -104,8 +104,6 @@ The BagIt metadata keyword Resource-Manifest MUST be present in bag-info.txt, an
 
 This specification RECOMMENDS the use of the `/META-INF/org.dataconservancy.packaging/PKG-INFO/ORE-REM/ORE-REM.[ext]` bag resource for the location of the Resource Manifest, where `[ext]` indicates the extension of the serialization, per [§3.2.1](#3.2.1).
 
-RDF resources specified herein MUST be identified with bag URIs, and MAY be additionally identified using local identifier schemes.
-
 <a name="#3.2.4"/>
 ### 3.2.4 Ontologies 
 It is RECOMMENDED that the package contain all ontologies necessary to interpret RDF resources in the package.  The serialized ontologies MUST use a file extension that indicates their serialization format, per [§3.2.1](#3.2.1).
