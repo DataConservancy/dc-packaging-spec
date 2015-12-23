@@ -62,7 +62,7 @@ running:
 
 The site will be rendered and published to GitHub.
 
-## Specifcation Update Guidelines
+## Specification Update Guidelines
 
 Specifications should be infrequently updated.
 
