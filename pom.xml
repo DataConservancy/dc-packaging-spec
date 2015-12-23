@@ -65,7 +65,7 @@
         <artifactId>site-maven-plugin</artifactId>
         <version>0.12</version>
         <configuration>
-          <message>Creating site for ${project.version}</message>
+          <message>Publishing site for ${project.name} version ${project.version} to ${project.url}</message>
         </configuration>
         <executions>
           <execution>
