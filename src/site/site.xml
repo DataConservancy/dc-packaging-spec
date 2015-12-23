@@ -6,6 +6,8 @@
     <version>1</version>
   </skin>
   <custom>
+    <initialPublishDate>12/23/2015</initialPublishDate>
+    <lastPublishedDate>12/23/2015</lastPublishedDate>
     <fluidoSkin>
       <topBarEnabled>false</topBarEnabled>
       <sideBarEnabled>false</sideBarEnabled>
@@ -15,8 +17,7 @@
         <alt>Data Conservancy Packaging Specifications</alt>
         <src>/images/dc-logo.gif</src>
         <href>/index.html</href>
-      </topBarIcon>
-      
+      </topBarIcon>      
     </fluidoSkin>
   </custom>
   <body>
