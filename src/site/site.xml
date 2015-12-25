@@ -30,7 +30,7 @@
       <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Data Conservancy Packaging Specification Home" />
       <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
       <meta prefix="og: http://ogp.me/ns#" property="og:url" content="/index.html" />
-      <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/images/dc-logo.gif" />
+      <meta prefix="og: http://ogp.me/ns#" property="og:image" content="@relativePath@/images/dc-logo.gif" />
       <meta prefix="og: http://ogp.me/ns#" property="og:image:type" content="image/gif" />
       <meta prefix="og: http://ogp.me/ns#" property="og:description" content="The Data Conservancy Packaging Specification Website" />
     </head>
