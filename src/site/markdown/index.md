@@ -1,3 +1,7 @@
+title: Data Conservancy Packaging Specifications Home
+description: Home page providing links and brief descriptions of the Data Conservancy 
+             packaging specification and BagIt Profile
+             
 # <a name="top"/> Data Conservancy Packaging Specifications
 
 This website maintains various documents authored by the [Data Conservancy][dc] which advance

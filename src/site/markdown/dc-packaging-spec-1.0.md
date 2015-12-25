@@ -1,3 +1,9 @@
+title: Data Conservancy Packaging Specification - 1.0
+description: The Data Conservancy Packaging Specification describes
+             the necessary files and metadata required to apply 
+             semantics to content packaged according to the Data 
+             Conservancy BagIt Profile.
+
 # Data Conservancy Packaging Specification
 
 ### Version 1.0

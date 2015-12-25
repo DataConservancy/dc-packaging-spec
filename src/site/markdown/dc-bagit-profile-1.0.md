@@ -1,3 +1,9 @@
+title: Data Conservancy BagIt Profile - 1.0
+description: The Data Conservancy BagIt Profile refines the IETF BagIt
+             specification in order to increase platform interoperability
+             and provide mechanisms for describing the custodial content of 
+             the Bag.             
+
 # Data Conservancy BagIt Profile
 
 ### Version 1.0
