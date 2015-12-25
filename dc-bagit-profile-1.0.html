@@ -59,7 +59,7 @@
 <p>Originally Published: 12/23/2015</p>
 <p>Last Published: 12/23/2015</p>
 <hr />
-<p>The current <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11">BagIt specification</a> at the time of this writing is version 0.97, expiring Dec 25, 2015. This document refers to it as the &#x201c;BagIt specification&#x201d;, or simply &#x201c;BagIt&#x201d;.</p>
+<p>The current <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11" title="IETF BagIt Specification version 0.97">BagIt specification</a> at the time of this writing is version 0.97, expiring Dec 25, 2015. This document refers to it as the &#x201c;BagIt specification&#x201d;, or simply &#x201c;BagIt&#x201d;.</p>
 <p>&#x2002;&#x2002;1. <a href="#a1">Data Conservancy BagIt Profile</a></p>
 <p>&#x2002;&#x2002;2. <a href="#a2">Interoperability</a></p>
 <p>&#x2002;&#x2002;&#x2002;&#x2002;2.1 <a href="#a2.1">Interoperability With Previous Data Conservancy Profiles</a></p>
@@ -86,7 +86,7 @@
 <p><a name="a2.1"></a></p></div></div>
 <div class="section">
 <h2><a name="a2.1_Interoperability_With_Previous_Data_Conservancy_Profiles"></a>2.1 Interoperability With Previous Data Conservancy Profiles</h2>
-<p>This profile specification is incompatible with previous versions of this profile. This profile supercedes <a class="externalLink" href="http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf">version <tt>0.9</tt></a> of the Data Conservancy BagIt profile, identified by the following metadata name and value in <tt>bag-info.txt</tt>:</p>
+<p>This profile specification is incompatible with previous versions of this profile. This profile supercedes <a class="externalLink" href="http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf" title="Data Conservancy BagIt Profile 0.9">version <tt>0.9</tt></a> of the Data Conservancy BagIt profile, identified by the following metadata name and value in <tt>bag-info.txt</tt>:</p>
 
 <div class="source">
 <div class="source"><pre class="prettyprint">BagIt-Profile-Identifier:  http://dataconservancy.org/formats/data-conservancy-pkg-0.9
@@ -101,11 +101,11 @@
 <p><a name="a2.2.2"></a></p></div>
 <div class="section">
 <h3><a name="a2.2.2_Filename_interoperability_between_platforms"></a>2.2.2 Filename interoperability between platforms</h3>
-<p>Section 7 of the BagIt specification discusses practical concerns of Bag interoperability between platforms. While <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7">BagIt &#xa7;7</a> is informative, this profile applies the following constraints to address platform interoperability.</p>
+<p>Section 7 of the BagIt specification discusses practical concerns of Bag interoperability between platforms. While <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7" title="IETF BagIt Specification version 0.97">BagIt &#xa7;7</a> is informative, this profile applies the following constraints to address platform interoperability.</p>
 <p><a name="a2.2.2.1"></a></p>
 <div class="section">
 <h4><a name="a2.2.2.1_Illegal_characters"></a>2.2.2.1 Illegal characters</h4>
-<p>The following characters are illegal, and are not to be used in path segments or file names, informed by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2">BagIt &#xa7;7.2.2</a>:</p>
+<p>The following characters are illegal, and are not to be used in path segments or file names, informed by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2" title="IETF BagIt Specification version 0.97">BagIt &#xa7;7.2.2</a>:</p>
 
 <ul>
   
@@ -138,7 +138,7 @@
 <p><a name="a2.2.2.2"></a></p></div>
 <div class="section">
 <h4><a name="a2.2.2.2_Illegal_file_names"></a>2.2.2.2 Illegal file names</h4>
-<p>The following are not to be used as file names, informed by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2">BagIt &#xa7;7.2.2</a>, and <a class="externalLink" href="http://msdn.microsoft.com/en-us/library/aa365247.aspx">MSDN article</a>:</p>
+<p>The following are not to be used as file names, informed by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2" title="IETF BagIt Specification version 0.97">BagIt &#xa7;7.2.2</a>, and <a class="externalLink" href="http://msdn.microsoft.com/en-us/library/aa365247.aspx" title="MSDN reserved file name article">MSDN article</a>:</p>
 
 <ul>
   
@@ -205,11 +205,11 @@
 <p><a name="a2.2.3"></a></p></div></div>
 <div class="section">
 <h3><a name="a2.2.3_Fetch_support"></a>2.2.3 Fetch support</h3>
-<p>Bags conforming to this profile must be <i>valid</i> (and therefore <i>complete</i>) per <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-3">BagIt &#xa7;3</a>. Our profile does not support <i>fetch.txt</i> (<a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.3">BagIt &#xa7;2.2.3</a>), therefore bags with a non-empty fetch file will not be conformant with this profile.</p>
+<p>Bags conforming to this profile must be <i>valid</i> (and therefore <i>complete</i>) per <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-3" title="IETF BagIt Specification version 0.97">BagIt &#xa7;3</a>. Our profile does not support <i>fetch.txt</i> (<a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.3" title="IETF BagIt Specification version 0.97">BagIt &#xa7;2.2.3</a>), therefore bags with a non-empty fetch file will not be conformant with this profile.</p>
 <p><a name="a2.2.4"></a></p></div>
 <div class="section">
 <h3><a name="a2.2.4_Reserved_metadata_names_and_cardinality"></a>2.2.4 Reserved metadata names and cardinality</h3>
-<p>This profile adds cardinality constraints on the reserved metadata names in <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.2">BagIt &#xa7;2.2.2</a>:</p>
+<p>This profile adds cardinality constraints on the reserved metadata names in <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.2" title="IETF BagIt Specification version 0.97">BagIt &#xa7;2.2.2</a>:</p>
 
 <div class="source">
 <div class="source"><pre class="prettyprint">Source-Organization: minOccurs=0, maxOccurs=unlimited
@@ -239,7 +239,7 @@ Resource-Manifest: minOccurs=1, maxOccurs=1
 <p><a name="a3.1"></a></p></div></div>
 <div class="section">
 <h2><a name="a3.1_Reserved_directories_and_tag_files"></a>3.1 Reserved directories and tag files</h2>
-<p>Any directories or filenames reserved by this profile are considered as &#x201c;Other Tag Files&#x201d; per <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.4">BagIt &#xa7;2.2.4</a>. Tag files defined by this profile SHOULD have entries in the tag manifests as specified by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.1">BagIt &#xa7;2.2.1</a>.</p>
+<p>Any directories or filenames reserved by this profile are considered as &#x201c;Other Tag Files&#x201d; per <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.4" title="IETF BagIt Specification version 0.97">BagIt &#xa7;2.2.4</a>. Tag files defined by this profile SHOULD have entries in the tag manifests as specified by <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.1" title="IETF BagIt Specification version 0.97">BagIt &#xa7;2.2.1</a>.</p>
 <p>This profile reserves the directory <tt>META-INF/org.dataconservancy.packaging</tt>, its subdirectories, and any contained files, where the <tt>META-INF</tt> directory is a sibling of the <tt>data</tt> directory. </p>
 <p>The directory <tt>META-INF/org.dataconservancy.packaging/ONT</tt> is reserved specifically to distribute ontologies that are referenced by the package description or bag payload.</p>
 <p>The directory <tt>META-INF/org.dataconservancy.packaging/PKG-INFO</tt> is reserved specifically to distribute any files (such as ORE Resource Map(s)) that describe the structure of the bag.</p>
@@ -247,7 +247,7 @@ Resource-Manifest: minOccurs=1, maxOccurs=1
 <p><a name="a3.2"></a></p></div>
 <div class="section">
 <h2><a name="a3.2_Bag_name"></a>3.2 Bag name</h2>
-<p>Bags conforming to this profile MUST name the single-file form of the bag (i.e. tar archive or zipped form) after the base directory of the bag.<br />This changes the SHOULD in <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-4">BagIt &#xa7;4</a> item #2 to a MUST.</p></div>
+<p>Bags conforming to this profile MUST name the single-file form of the bag (i.e. tar archive or zipped form) after the base directory of the bag.<br />This changes the SHOULD in <a class="externalLink" href="http://tools.ietf.org/html/draft-kunze-bagit-11#section-4" title="IETF BagIt Specification version 0.97">BagIt &#xa7;4</a> item #2 to a MUST.</p></div>
                   </div>
           </div>
 
