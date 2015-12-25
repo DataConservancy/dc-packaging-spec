@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Data Conservancy Packaging Specifications">
+<!--
+  An annoying "feature" of the way the DefaultSiteRenderer works:
+  the value of the name attribute is prepended to any title.  So
+  set it to the zero-length string to only get the title from
+  the site content itself.
+-->
+<project name="">
   <skin>
     <groupId>org.dataconservancy.skins</groupId>
     <artifactId>spec</artifactId>
