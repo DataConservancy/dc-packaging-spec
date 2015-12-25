@@ -213,15 +213,15 @@ Bags conforming to this profile MUST name the single-file form of the
 bag (i.e. tar archive or zipped form) after the base directory of the bag.  
 This changes the SHOULD in [BagIt §4][bagit-4] item #2 to a MUST.
 
-[bagit-0.97]: http://tools.ietf.org/html/draft-kunze-bagit-11
-[bagit-212]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.1.2
-[bagit-221]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.1
-[bagit-222]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.2
-[bagit-223]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.3
-[bagit-224]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.4
-[bagit-3]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-3
-[bagit-4]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-4
-[bagit-7]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7
-[bagit-722]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2
-[bagit-profile-0.9]: http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf
-[msdn]: http://msdn.microsoft.com/en-us/library/aa365247.aspx
+[bagit-0.97]: http://tools.ietf.org/html/draft-kunze-bagit-11 "IETF BagIt Specification version 0.97"
+[bagit-212]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.1.2 "IETF BagIt Specification version 0.97"
+[bagit-221]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.1 "IETF BagIt Specification version 0.97"
+[bagit-222]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.2 "IETF BagIt Specification version 0.97"
+[bagit-223]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.3 "IETF BagIt Specification version 0.97"
+[bagit-224]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-2.2.4 "IETF BagIt Specification version 0.97"
+[bagit-3]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-3 "IETF BagIt Specification version 0.97"
+[bagit-4]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-4 "IETF BagIt Specification version 0.97"
+[bagit-7]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7 "IETF BagIt Specification version 0.97"
+[bagit-722]: http://tools.ietf.org/html/draft-kunze-bagit-11#section-7.2.2 "IETF BagIt Specification version 0.97"
+[bagit-profile-0.9]: http://dataconservancy.org/wp-content/uploads/2013/08/Package-DCS-BagIt-Specification-DRAFT-2013-08-09.pdf "Data Conservancy BagIt Profile 0.9"
+[msdn]: http://msdn.microsoft.com/en-us/library/aa365247.aspx "MSDN reserved file name article"

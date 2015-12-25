@@ -18,6 +18,6 @@ in order to provide platform interoperability and Resource Manifest discovery wh
 The [Data Conservancy Packaging Specification][packaging-spec-1.0] relies on the [BagIt Profile](#bagit-profile) to 
 package and describe digital content. 
 
-[dc]: http://dataconservancy.org "Data Conservancy"
-[packaging-spec-1.0]: dc-packaging-spec-1.0.html
-[bagit-profile-1.0]: dc-bagit-profile-1.0.html
+[dc]: http://dataconservancy.org "Data Conservancy Home Page"
+[packaging-spec-1.0]: dc-packaging-spec-1.0.html "Data Conservancy Packaging Specification 1.0"
+[bagit-profile-1.0]: dc-bagit-profile-1.0.html "Data Conservancy BagIt Profile 1.0"
