@@ -10,7 +10,7 @@ description: The Data Conservancy Packaging Specification describes
 
 Originally Published: 12/23/2015
 
-Last Published: 12/23/2015
+Last Published: 2/27/2016
 
 * * *
 
@@ -66,7 +66,7 @@ The meaning of  "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
 
 *Domain Object Manifest*: A package resource, [modeled as an OAI-ORE Resource Map](http://www.openarchives.org/ore/1.0/datamodel#Resource_Map), enumerating the domain objects in the package.
 
-*Package*: A logical unit of digital content conforming to this specification.   It contains a payload, *Domain Objects* describing the payload, a manifest of *Domain Objects*, and additional package level metadata. 
+*Package*: A logical unit of digital content conforming to this specification.   It contains a payload, *Domain Objects* describing the payload, a *manifest* of Domain Objects, and additional package level metadata. 
 
 *Payload*: equivalent to the custodial content of the package
 
@@ -106,7 +106,7 @@ The serialized ORE-ReM MUST use a file extension that indicates its serializatio
 
 <a name="#3.2.3.2"/>
 #### 3.2.3.2 Resource Manifest Discovery
-The BagIt metadata keyword Resource-Manifest MUST be present in bag-info.txt, and it’s value MUST be the location of the Resource Manifest serialization, referenced using a compliant URI ([§4](#4)).
+The BagIt metadata keyword `Resource-Manifest` MUST be present in `bag-info.txt`, and its value MUST be the location of the Resource Manifest serialization, referenced using a compliant URI ([§4](#4)).
 
 This specification RECOMMENDS the use of the `/META-INF/org.dataconservancy.packaging/PKG-INFO/ORE-REM/ORE-REM.[ext]` bag resource for the location of the Resource Manifest, where `[ext]` indicates the extension of the serialization, per [§3.2.1](#3.2.1).
 
@@ -146,4 +146,4 @@ The following clauses capture the semantics of bag URIs in RDF documents specifi
 * All bag URIs used in domain objects MUST resolve to a resource in the bag
 * For bag URIs that contain hash fragments, the non-hashed portion of the URI MUST resolve to a resource in the bag
 * RDF serializations MAY use relative URIs, which MUST be interpreted as being relative to the bag URI of the document containing it
-* Absent a specified base URI in the document, the null relative URI (<> in turtle) MUST be interpreted as equivalent to the the bag URI of the file containing it.
+* Absent a specified base URI in the document, the null relative URI (`<>` in turtle) MUST be interpreted as equivalent to the the bag URI of the file containing it.
